@@ -20,7 +20,7 @@ class User2
     /**
      * @ORM\Column(type="string", length=200, nullable=true)
      */
-    private $User2;
+    private $User;
 
     public function getId(): ?int
     {
@@ -29,12 +29,12 @@ class User2
 
     public function getUser(): ?string
     {
-        return $this->User2;
+        return $this->User;
     }
 
     public function setUser(?string $User): self
     {
-        $this->User = $User2;
+        $this->User = $User;
 
         return $this;
     }
